@@ -1796,7 +1796,7 @@ help(BabyNames)
 BabyNames %&gt;%
   head(5)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NSwibmNvbCI6NCwic3VtbWFyeSI6eyJEZXNjcmlwdGlvbiI6WyJkZiBbNSDDlyA0XSJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUJvMVJQVS9ETUJDOUpFNmlSQ29nTWZJWFNCWVlXSkZvdHk0SXBLNXVZbHFMNUJJbERyUk0vQWNtL2hiOG40S2Qrdmd3QzVGT2ZubDM3Kzc1ZkgyMU9Fc1hLUUFFd0pnSFFhZ2hoTGMzcyt3Q2dQbjZ4d01HaVRrM3V1aFlBNmJqeUZUWkJKdnpia3Y0RXBFVG50WTE0V1JheVNlK0ZHcHRpV2d1RWFWd1dubXpmd0dBeVNpQ2sxZUE5QlFnZnRmeG9ydStmZWZpeGQvNGRhRVFlUzE2NjRDUmFVTmFIUFJpUTdWRk02Q2ltcTNnbmRNczZackhuQm9hQi80empGL29UaTBxM3ROVUl0T1NLNTdmZFdZMndNNlJ4RTJyWklOYTVKdjlSNDdZNnh6aWNFRGpwTXlLOVlEMzJibVREbHBjbVpranRZK0pQY01mbU8xZCtCOVdIdEhMQ1Z4SnBCMkZsWDdWaWpxWDRzSENBNzJQY1IxNTI4bXZ6YVdhN1hQVktFNlN0R2dxWXNhYncrNFR1TkNpOEpRQ0FBQT0ifQ== -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NSwibmNvbCI6NCwic3VtbWFyeSI6eyJEZXNjcmlwdGlvbiI6WyJkZiBbNSDDlyA0XSJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUJvMVJQVS9ETUJDOUpFNmpSQ29nTWZJWFNKWXVyRWkwV3hjRVVsWTNNYTFGY29rU0Ixb20vZ01UZnd2K1Q4Rk9mWHlZaFVnbnY3eTdkL2Q4dnI3S1owbWVBRUFBakhrUWhCcENlSHV6U0M4QW1LOS9QR0FRbTNPcmkwNDFZRHBPVEpWTnNDWHZkb1F2RVRuaGVWMFRqdWVWZk9Jcm9UYVdtQ3dsb2hST0syL3hMd0F3SFVWdzlncVFuQU5FN3pwZWROZTM3MXlVLzQxZkZ3cVIxNkszRGhpWk5xVEZRUysyVkZzMEF5cXEyUW5lT2MzaXJubk1xS0Z4NEQvRCtJWHUxS0xpUFUwbE1pbTU0dGxkWjJZRDdCMUoxTFJLTnFoRnZ0bi94QkY3blVNY0QyaWNsR214R2ZBK25UbnBvTVcxbVRsU2g1amFNL3lCMmNHRi8ySGxFM281Z1d1SnRLT3cwcTlhVWVkU1BGaDRwUGN4cmlOck8vbTF1VVN6ZmFZYXhVbVNGRTFGekhoejJIOENhc2VSclpRQ0FBQT0ifQ== -->
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["name"],"name":[1],"type":["chr"],"align":["left"]},{"label":["sex"],"name":[2],"type":["chr"],"align":["left"]},{"label":["count"],"name":[3],"type":["int"],"align":["right"]},{"label":["year"],"name":[4],"type":["int"],"align":["right"]}],"data":[{"1":"Mary","2":"F","3":"7065","4":"1880","_rn_":"1"},{"1":"Anna","2":"F","3":"2604","4":"1880","_rn_":"2"},{"1":"Emma","2":"F","3":"2003","4":"1880","_rn_":"3"},{"1":"Elizabeth","2":"F","3":"1939","4":"1880","_rn_":"4"},{"1":"Minnie","2":"F","3":"1746","4":"1880","_rn_":"5"}],"options":{"columns":{"min":{},"max":[10],"total":[4]},"rows":{"min":[10],"max":[10],"total":[5]},"pages":{}}}
@@ -1811,8 +1811,10 @@ BabyNames %&gt;%
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>The data frame consists of 4 variables across 1.79 million cases.
-Each case represents a name, given the gender and year.</p>
+<ul>
+<li>The data frame consists of 4 variables across 1.79 million cases.
+Each case represents a name, given the gender and year.</li>
+</ul>
 <hr />
 </div>
 <div id="step-2" class="section level3">
@@ -1826,14 +1828,18 @@ doc]</p>
 <div id="what-variables-from-the-raw-data-table-do-not-appear-at-all-in-the-graph" class="section level5">
 <h5>What variable(s) from the raw data table do not appear at all in the
 graph?</h5>
-<p>The ‘sex’ variable does not appear at all in the target graph, and
-‘count’ appears to be transformed.</p>
+<ul>
+<li>The ‘sex’ variable does not appear at all in the target graph, and
+‘count’ appears to be transformed.</li>
+</ul>
 </div>
 <div id="what-variables-in-the-graph-are-similar-to-corresponding-variables-in-the-raw-data-table-but-might-have-been-transformed-in-some-way" class="section level5">
 <h5>What variable(s) in the graph are similar to corresponding variables
 in the raw data table, but might have been transformed in some way?</h5>
-<p>The ‘Popularity’ appears to be the ‘count’ variable of both male and
-females combined</p>
+<ul>
+<li>The ‘Popularity’ appears to be the ‘count’ variable of both male and
+females combined</li>
+</ul>
 <hr />
 </div>
 </div>
@@ -1841,19 +1847,25 @@ females combined</p>
 <h3>Step 4</h3>
 <div id="have-cases-been-filtered-out" class="section level5">
 <h5>Have cases been filtered out?</h5>
-<p>All cases have been filtered out except for the desired names.</p>
+<ul>
+<li>All cases have been filtered out except for the desired names.</li>
+</ul>
 </div>
 <div id="have-cases-been-grouped-and-summarized-within-groups-in-any-way" class="section level5">
 <h5>Have cases been grouped and summarized within groups in any
 way?</h5>
-<p>Cases have been grouped by ‘name’ and ‘year’, removing the ‘sex’
-variable.</p>
+<ul>
+<li>Cases have been grouped by ‘name’ and ‘year’, removing the ‘sex’
+variable.</li>
+</ul>
 </div>
 <div id="have-any-new-variables-been-introduced-if-so-what-the-relationship-between-the-new-variables-and-existing-variables" class="section level5">
 <h5>Have any new variables been introduced? If so, what the relationship
 between the new variables and existing variables?</h5>
-<p>It appears the only new variable is ‘Popularity’, which simply
-appears to be the ‘count’ of both males and females.</p>
+<ul>
+<li>It appears the only new variable is ‘Popularity’, which simply
+appears to be the ‘count’ of both males and females.</li>
+</ul>
 <hr />
 </div>
 </div>
@@ -1862,8 +1874,8 @@ appears to be the ‘count’ of both males and females.</p>
 <ul>
 <li>Group the cases by ‘name’ and ‘year’.</li>
 <li>Filter out all the unwanted names.</li>
-<li>Summarise the ‘count’ variable to a sex-combined ‘total’
-variable.</li>
+<li>Summarise the ‘count’ variable to a sex-combined ‘total’ variable,
+which will be displyed as ‘Popularity’.</li>
 </ul>
 <hr />
 </div>
@@ -1871,6 +1883,7 @@ variable.</li>
 <h3>Step 6</h3>
 <p>[This should be done by hand on paper, nothing to show in the HTML
 doc]</p>
+<hr />
 </div>
 <div id="step-7" class="section level3">
 <h3>Step 7</h3>
@@ -1887,6 +1900,7 @@ summarise(total = sum(count))</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<hr />
 </div>
 <div id="graph-it" class="section level3">
 <h3>Graph It!</h3>
@@ -1915,6 +1929,12 @@ summarise(total = sum(count))</code></pre>
 <!-- rnb-plot-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<ul>
+<li>The name ‘Susan’ really took off in popularity around the 1930s and
+40s, and remained so until the 1970s. Emma was only a mildly popular
+name until the late 1900s. ‘Neil’ and ‘Branson’ are both not very
+popular names, but ‘Branson’ is certainly the least popular.</li>
+</ul>
 <p>Note: if someone in your group has a name that hasn’t been registered
 with the US Social Security Administration for a baby born in the United
 States, it’s okay that the student’s name may not appear on the
@@ -1923,7 +1943,7 @@ plot.</p>
 </div>
 </div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlBvcHVsYXIgbmFtZXMiDQpzdWJ0aXRsZTogIldlZWsgNiBBY3Rpdml0eSINCmF1dGhvcjogIkJyYW5zb24gVCBGYXVzZXkiDQpkYXRlOiAiU3VuZGF5LCA2IE9jdG9iZXIgMjAyNCINCm91dHB1dDogDQogIGh0bWxfbm90ZWJvb2s6DQogICAgZmlnX2hlaWdodDogMw0KICAgIGZpZ193aWR0aDogNQ0KLS0tDQoNCiMgU2V0IFVwDQoNCmBgYHtyIG1lc3NhZ2U9RkFMU0V9DQojIGxvYWQgbmVjZXNzYXJ5IHBhY2thZ2VzDQpsaWJyYXJ5KHRpZHl2ZXJzZSkNCmxpYnJhcnkoZGNEYXRhKQ0KbGlicmFyeShtb3NhaWMpDQpsaWJyYXJ5KGVzcXVpc3NlKQ0KYGBgDQoNCg0KYGBge3J9DQojIExvYWQgdGhlIEJhYnlOYW1lcyBkYXRhIGludG8gUlN0dWRpbyBlbnZpcm9ubWVudCAoZnJvbSBkY0RhdGEgcGFja2FnZSkNCmRhdGEoIkJhYnlOYW1lcyIpDQoNCmBgYA0KDQojIEFjdGl2aXR5DQoNCioqR29hbCoqOiBCeSB0aGUgZW5kIG9mIHRoZSBhY3Rpdml0eSwgZWFjaCB0ZWFtIHdpbGwgY3JlYXRlIGEgZ3JhcGggKGxpa2UgRmlndXJlIEEuMSBvbiBwIDE1OSkgc2hvd2luZyB1cHMgYW5kIGRvd25zIGluIHRoZSBwb3B1bGFyaXR5IG9mIHRoZSBuYW1lcyBhdCB5b3VyIHRhYmxlIGFjY29yZGluZyB0byB0aGUgVS5TLiBzb2NpYWwgc2VjdXJpdHkgcmVnaXN0cnkuICANCg0KX19fDQoNCiMjIyBTdGVwIDENCg0KDQpgYGB7cn0NCiMjIEhlbHBmdWwgdG8gbG9vayBhdCB0aGUgZGF0YSBhIGZldyBkaWZmZXJlbnQgd2F5cyAoc2VlIENoIDkgZm9yIG1vcmUpLg0KaGVscChCYWJ5TmFtZXMpDQpCYWJ5TmFtZXMgJT4lDQogIGhlYWQoNSkNCm5yb3coQmFieU5hbWVzKQ0KYGBgDQpUaGUgZGF0YSBmcmFtZSBjb25zaXN0cyBvZiA0IHZhcmlhYmxlcyBhY3Jvc3MgMS43OSBtaWxsaW9uIGNhc2VzLiBFYWNoIGNhc2UgcmVwcmVzZW50cyBhIG5hbWUsIGdpdmVuIHRoZSBnZW5kZXIgYW5kIHllYXIuDQoNCl9fXw0KDQojIyMgU3RlcCAyDQoNCltUaGlzIHNob3VsZCBiZSBkb25lIGJ5IGhhbmQgb24gcGFwZXIsIG5vdGhpbmcgdG8gc2hvdyBpbiB0aGUgSFRNTCBkb2NdDQoNCl9fXw0KDQojIyMgU3RlcCAzIA0KDQojIyMjIyBXaGF0IHZhcmlhYmxlKHMpIGZyb20gdGhlIHJhdyBkYXRhIHRhYmxlIGRvIG5vdCBhcHBlYXIgYXQgYWxsIGluIHRoZSBncmFwaD8NCg0KVGhlICdzZXgnIHZhcmlhYmxlIGRvZXMgbm90IGFwcGVhciBhdCBhbGwgaW4gdGhlIHRhcmdldCBncmFwaCwgYW5kICdjb3VudCcgYXBwZWFycyB0byBiZSB0cmFuc2Zvcm1lZC4NCg0KIyMjIyMgV2hhdCB2YXJpYWJsZShzKSBpbiB0aGUgZ3JhcGggYXJlIHNpbWlsYXIgdG8gY29ycmVzcG9uZGluZyB2YXJpYWJsZXMgaW4gdGhlIHJhdyBkYXRhIHRhYmxlLCBidXQgbWlnaHQgaGF2ZSBiZWVuIHRyYW5zZm9ybWVkIGluIHNvbWUgd2F5Pw0KDQpUaGUgJ1BvcHVsYXJpdHknIGFwcGVhcnMgdG8gYmUgdGhlICdjb3VudCcgdmFyaWFibGUgb2YgYm90aCBtYWxlIGFuZCBmZW1hbGVzIGNvbWJpbmVkDQoNCl9fXw0KDQojIyMgU3RlcCA0DQoNCiMjIyMjIEhhdmUgY2FzZXMgYmVlbiBmaWx0ZXJlZCBvdXQ/DQoNCkFsbCBjYXNlcyBoYXZlIGJlZW4gZmlsdGVyZWQgb3V0IGV4Y2VwdCBmb3IgdGhlIGRlc2lyZWQgbmFtZXMuDQoNCiMjIyMjIEhhdmUgY2FzZXMgYmVlbiBncm91cGVkIGFuZCBzdW1tYXJpemVkIHdpdGhpbiBncm91cHMgaW4gYW55IHdheT8NCg0KQ2FzZXMgaGF2ZSBiZWVuIGdyb3VwZWQgYnkgJ25hbWUnIGFuZCAneWVhcicsIHJlbW92aW5nIHRoZSAnc2V4JyB2YXJpYWJsZS4NCg0KIyMjIyMgSGF2ZSBhbnkgbmV3IHZhcmlhYmxlcyBiZWVuIGludHJvZHVjZWQ/ICBJZiBzbywgd2hhdCB0aGUgcmVsYXRpb25zaGlwIGJldHdlZW4gdGhlIG5ldyB2YXJpYWJsZXMgYW5kIGV4aXN0aW5nIHZhcmlhYmxlcz8NCg0KSXQgYXBwZWFycyB0aGUgb25seSBuZXcgdmFyaWFibGUgaXMgJ1BvcHVsYXJpdHknLCB3aGljaCBzaW1wbHkgYXBwZWFycyB0byBiZSB0aGUgJ2NvdW50JyBvZiBib3RoIG1hbGVzIGFuZCBmZW1hbGVzLg0KDQpfX18NCg0KIyMjIFN0ZXAgNQ0KDQotIEdyb3VwIHRoZSBjYXNlcyBieSAnbmFtZScgYW5kICd5ZWFyJy4NCi0gRmlsdGVyIG91dCBhbGwgdGhlIHVud2FudGVkIG5hbWVzLg0KLSBTdW1tYXJpc2UgdGhlICdjb3VudCcgdmFyaWFibGUgdG8gYSBzZXgtY29tYmluZWQgJ3RvdGFsJyB2YXJpYWJsZS4NCg0KX19fDQoNCiMjIyBTdGVwIDYNCg0KW1RoaXMgc2hvdWxkIGJlIGRvbmUgYnkgaGFuZCBvbiBwYXBlciwgbm90aGluZyB0byBzaG93IGluIHRoZSBIVE1MIGRvY10NCg0KDQoNCiMjIyBTdGVwIDcNCg0KYGBge3J9DQpHUmRhdGEgPC0gQmFieU5hbWVzICU+JQ0KZ3JvdXBfYnkobmFtZSwgeWVhcikgJT4lDQpmaWx0ZXIobmFtZSAlaW4lIGMoIkJyYW5zb24iLCAiRW1tYSIsICJOZWlsIiwgIlN1c2FuIikpICU+JQ0Kc3VtbWFyaXNlKHRvdGFsID0gc3VtKGNvdW50KSkNCmBgYA0KDQoNCiMjIyBHcmFwaCBJdCENCg0KSGVyZSdzIHRoZSBzYW1wbGUgY29kZSBwcm92aWRlZCBieSB0aGUgYm9vazoNCg0KYGBgDQpHbHlwaFJlYWR5Rm9ybSAlPiUNCiAgZ2dwbG90KGFlcyh4ID0geWVhciwgeSA9IHRvdGFsLCBncm91cCA9IG5hbWUpKSArIA0KICBnZW9tX2xpbmUoc2l6ZSA9IDEsIGFscGhhID0gMC41LCBhZXMoY29sb3IgPSBuYW1lKSkgKyANCiAgeWxhYigiUG9wdWxhcml0eSIpICsgeGxhYigiWWVhciIpDQpgYGANCmBgYHtyfQ0KZ2dwbG90KEdSZGF0YSkgKw0KICAgIGFlcyh4ID0geWVhciwgeSA9IHRvdGFsLCBjb2xvdXIgPSBuYW1lKSArDQogICAgZ2VvbV9zdGVwKGxpbmV3aWR0aCA9IDEpICsNCiAgICBzY2FsZV9jb2xvcl9odWUoZGlyZWN0aW9uID0gMSkgKw0KICAgIGxhYnMoDQogICAgICAgIHggPSAiWWVhciIsDQogICAgICAgIHkgPSAiUG9wdWxhcml0eSIsDQogICAgICAgIHRpdGxlID0gIlBvcHVsYXJpdHkgb2YgTmFtZXMiLA0KICAgICAgICBjb2xvciA9ICJOYW1lczoiDQogICAgKSArDQogICAgdGhlbWVfbWluaW1hbCgpDQpgYGANCg0KDQpOb3RlOiBpZiBzb21lb25lIGluIHlvdXIgZ3JvdXAgaGFzIGEgbmFtZSB0aGF0IGhhc24ndCBiZWVuIHJlZ2lzdGVyZWQgd2l0aCB0aGUgVVMgU29jaWFsIFNlY3VyaXR5IEFkbWluaXN0cmF0aW9uIGZvciBhIGJhYnkgYm9ybiBpbiB0aGUgVW5pdGVkIFN0YXRlcywgaXQncyBva2F5IHRoYXQgdGhlIHN0dWRlbnQncyBuYW1lIG1heSBub3QgYXBwZWFyIG9uIHRoZSBwbG90Lg==</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlBvcHVsYXIgbmFtZXMiDQpzdWJ0aXRsZTogIldlZWsgNiBBY3Rpdml0eSINCmF1dGhvcjogIkJyYW5zb24gVCBGYXVzZXkiDQpkYXRlOiAiU3VuZGF5LCA2IE9jdG9iZXIgMjAyNCINCm91dHB1dDogDQogIGh0bWxfbm90ZWJvb2s6DQogICAgZmlnX2hlaWdodDogMw0KICAgIGZpZ193aWR0aDogNQ0KLS0tDQoNCiMgU2V0IFVwDQoNCmBgYHtyIG1lc3NhZ2U9RkFMU0V9DQojIGxvYWQgbmVjZXNzYXJ5IHBhY2thZ2VzDQpsaWJyYXJ5KHRpZHl2ZXJzZSkNCmxpYnJhcnkoZGNEYXRhKQ0KbGlicmFyeShtb3NhaWMpDQpsaWJyYXJ5KGVzcXVpc3NlKQ0KYGBgDQoNCg0KYGBge3J9DQojIExvYWQgdGhlIEJhYnlOYW1lcyBkYXRhIGludG8gUlN0dWRpbyBlbnZpcm9ubWVudCAoZnJvbSBkY0RhdGEgcGFja2FnZSkNCmRhdGEoIkJhYnlOYW1lcyIpDQoNCmBgYA0KDQojIEFjdGl2aXR5DQoNCioqR29hbCoqOiBCeSB0aGUgZW5kIG9mIHRoZSBhY3Rpdml0eSwgZWFjaCB0ZWFtIHdpbGwgY3JlYXRlIGEgZ3JhcGggKGxpa2UgRmlndXJlIEEuMSBvbiBwIDE1OSkgc2hvd2luZyB1cHMgYW5kIGRvd25zIGluIHRoZSBwb3B1bGFyaXR5IG9mIHRoZSBuYW1lcyBhdCB5b3VyIHRhYmxlIGFjY29yZGluZyB0byB0aGUgVS5TLiBzb2NpYWwgc2VjdXJpdHkgcmVnaXN0cnkuICANCg0KX19fDQoNCiMjIyBTdGVwIDENCg0KDQpgYGB7cn0NCiMjIEhlbHBmdWwgdG8gbG9vayBhdCB0aGUgZGF0YSBhIGZldyBkaWZmZXJlbnQgd2F5cyAoc2VlIENoIDkgZm9yIG1vcmUpLg0KaGVscChCYWJ5TmFtZXMpDQpCYWJ5TmFtZXMgJT4lDQogIGhlYWQoNSkNCm5yb3coQmFieU5hbWVzKQ0KYGBgDQotIFRoZSBkYXRhIGZyYW1lIGNvbnNpc3RzIG9mIDQgdmFyaWFibGVzIGFjcm9zcyAxLjc5IG1pbGxpb24gY2FzZXMuIEVhY2ggY2FzZSByZXByZXNlbnRzIGEgbmFtZSwgZ2l2ZW4gdGhlIGdlbmRlciBhbmQgeWVhci4NCg0KX19fDQoNCiMjIyBTdGVwIDINCg0KW1RoaXMgc2hvdWxkIGJlIGRvbmUgYnkgaGFuZCBvbiBwYXBlciwgbm90aGluZyB0byBzaG93IGluIHRoZSBIVE1MIGRvY10NCg0KX19fDQoNCiMjIyBTdGVwIDMgDQoNCiMjIyMjIFdoYXQgdmFyaWFibGUocykgZnJvbSB0aGUgcmF3IGRhdGEgdGFibGUgZG8gbm90IGFwcGVhciBhdCBhbGwgaW4gdGhlIGdyYXBoPw0KDQotIFRoZSAnc2V4JyB2YXJpYWJsZSBkb2VzIG5vdCBhcHBlYXIgYXQgYWxsIGluIHRoZSB0YXJnZXQgZ3JhcGgsIGFuZCAnY291bnQnIGFwcGVhcnMgdG8gYmUgdHJhbnNmb3JtZWQuDQoNCiMjIyMjIFdoYXQgdmFyaWFibGUocykgaW4gdGhlIGdyYXBoIGFyZSBzaW1pbGFyIHRvIGNvcnJlc3BvbmRpbmcgdmFyaWFibGVzIGluIHRoZSByYXcgZGF0YSB0YWJsZSwgYnV0IG1pZ2h0IGhhdmUgYmVlbiB0cmFuc2Zvcm1lZCBpbiBzb21lIHdheT8NCg0KLSBUaGUgJ1BvcHVsYXJpdHknIGFwcGVhcnMgdG8gYmUgdGhlICdjb3VudCcgdmFyaWFibGUgb2YgYm90aCBtYWxlIGFuZCBmZW1hbGVzIGNvbWJpbmVkDQoNCl9fXw0KDQojIyMgU3RlcCA0DQoNCiMjIyMjIEhhdmUgY2FzZXMgYmVlbiBmaWx0ZXJlZCBvdXQ/DQoNCi0gQWxsIGNhc2VzIGhhdmUgYmVlbiBmaWx0ZXJlZCBvdXQgZXhjZXB0IGZvciB0aGUgZGVzaXJlZCBuYW1lcy4NCg0KIyMjIyMgSGF2ZSBjYXNlcyBiZWVuIGdyb3VwZWQgYW5kIHN1bW1hcml6ZWQgd2l0aGluIGdyb3VwcyBpbiBhbnkgd2F5Pw0KDQotIENhc2VzIGhhdmUgYmVlbiBncm91cGVkIGJ5ICduYW1lJyBhbmQgJ3llYXInLCByZW1vdmluZyB0aGUgJ3NleCcgdmFyaWFibGUuDQoNCiMjIyMjIEhhdmUgYW55IG5ldyB2YXJpYWJsZXMgYmVlbiBpbnRyb2R1Y2VkPyAgSWYgc28sIHdoYXQgdGhlIHJlbGF0aW9uc2hpcCBiZXR3ZWVuIHRoZSBuZXcgdmFyaWFibGVzIGFuZCBleGlzdGluZyB2YXJpYWJsZXM/DQoNCi0gSXQgYXBwZWFycyB0aGUgb25seSBuZXcgdmFyaWFibGUgaXMgJ1BvcHVsYXJpdHknLCB3aGljaCBzaW1wbHkgYXBwZWFycyB0byBiZSB0aGUgJ2NvdW50JyBvZiBib3RoIG1hbGVzIGFuZCBmZW1hbGVzLg0KDQpfX18NCg0KIyMjIFN0ZXAgNQ0KDQotIEdyb3VwIHRoZSBjYXNlcyBieSAnbmFtZScgYW5kICd5ZWFyJy4NCi0gRmlsdGVyIG91dCBhbGwgdGhlIHVud2FudGVkIG5hbWVzLg0KLSBTdW1tYXJpc2UgdGhlICdjb3VudCcgdmFyaWFibGUgdG8gYSBzZXgtY29tYmluZWQgJ3RvdGFsJyB2YXJpYWJsZSwgd2hpY2ggd2lsbCBiZSBkaXNwbHllZCBhcyAnUG9wdWxhcml0eScuDQoNCl9fXw0KDQojIyMgU3RlcCA2DQoNCltUaGlzIHNob3VsZCBiZSBkb25lIGJ5IGhhbmQgb24gcGFwZXIsIG5vdGhpbmcgdG8gc2hvdyBpbiB0aGUgSFRNTCBkb2NdDQoNCl9fXw0KDQojIyMgU3RlcCA3DQoNCmBgYHtyfQ0KR1JkYXRhIDwtIEJhYnlOYW1lcyAlPiUNCmdyb3VwX2J5KG5hbWUsIHllYXIpICU+JQ0KZmlsdGVyKG5hbWUgJWluJSBjKCJCcmFuc29uIiwgIkVtbWEiLCAiTmVpbCIsICJTdXNhbiIpKSAlPiUNCnN1bW1hcmlzZSh0b3RhbCA9IHN1bShjb3VudCkpDQpgYGANCl9fXw0KDQojIyMgR3JhcGggSXQhDQoNCkhlcmUncyB0aGUgc2FtcGxlIGNvZGUgcHJvdmlkZWQgYnkgdGhlIGJvb2s6DQoNCmBgYA0KR2x5cGhSZWFkeUZvcm0gJT4lDQogIGdncGxvdChhZXMoeCA9IHllYXIsIHkgPSB0b3RhbCwgZ3JvdXAgPSBuYW1lKSkgKyANCiAgZ2VvbV9saW5lKHNpemUgPSAxLCBhbHBoYSA9IDAuNSwgYWVzKGNvbG9yID0gbmFtZSkpICsgDQogIHlsYWIoIlBvcHVsYXJpdHkiKSArIHhsYWIoIlllYXIiKQ0KYGBgDQoNCmBgYHtyfQ0KZ2dwbG90KEdSZGF0YSkgKw0KICAgIGFlcyh4ID0geWVhciwgeSA9IHRvdGFsLCBjb2xvdXIgPSBuYW1lKSArDQogICAgZ2VvbV9zdGVwKGxpbmV3aWR0aCA9IDEpICsNCiAgICBzY2FsZV9jb2xvcl9odWUoZGlyZWN0aW9uID0gMSkgKw0KICAgIGxhYnMoDQogICAgICAgIHggPSAiWWVhciIsDQogICAgICAgIHkgPSAiUG9wdWxhcml0eSIsDQogICAgICAgIHRpdGxlID0gIlBvcHVsYXJpdHkgb2YgTmFtZXMiLA0KICAgICAgICBjb2xvciA9ICJOYW1lczoiDQogICAgKSArDQogICAgdGhlbWVfbWluaW1hbCgpDQpgYGANCg0KLSBUaGUgbmFtZSAnU3VzYW4nIHJlYWxseSB0b29rIG9mZiBpbiBwb3B1bGFyaXR5IGFyb3VuZCB0aGUgMTkzMHMgYW5kIDQwcywgYW5kIHJlbWFpbmVkIHNvIHVudGlsIHRoZSAxOTcwcy4gRW1tYSB3YXMgb25seSBhIG1pbGRseSBwb3B1bGFyIG5hbWUgdW50aWwgdGhlIGxhdGUgMTkwMHMuICdOZWlsJyBhbmQgJ0JyYW5zb24nIGFyZSBib3RoIG5vdCB2ZXJ5IHBvcHVsYXIgbmFtZXMsIGJ1dCAnQnJhbnNvbicgaXMgY2VydGFpbmx5IHRoZSBsZWFzdCBwb3B1bGFyLg0KDQpOb3RlOiBpZiBzb21lb25lIGluIHlvdXIgZ3JvdXAgaGFzIGEgbmFtZSB0aGF0IGhhc24ndCBiZWVuIHJlZ2lzdGVyZWQgd2l0aCB0aGUgVVMgU29jaWFsIFNlY3VyaXR5IEFkbWluaXN0cmF0aW9uIGZvciBhIGJhYnkgYm9ybiBpbiB0aGUgVW5pdGVkIFN0YXRlcywgaXQncyBva2F5IHRoYXQgdGhlIHN0dWRlbnQncyBuYW1lIG1heSBub3QgYXBwZWFyIG9uIHRoZSBwbG90Lg==</div>
 
 
 

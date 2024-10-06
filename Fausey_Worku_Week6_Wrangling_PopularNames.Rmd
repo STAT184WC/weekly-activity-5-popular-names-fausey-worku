@@ -42,7 +42,7 @@ BabyNames %>%
   head(5)
 nrow(BabyNames)
 ```
-The data frame consists of 4 variables across 1.79 million cases. Each case represents a name, given the gender and year.
+- The data frame consists of 4 variables across 1.79 million cases. Each case represents a name, given the gender and year.
 
 ___
 
@@ -56,11 +56,11 @@ ___
 
 ##### What variable(s) from the raw data table do not appear at all in the graph?
 
-The 'sex' variable does not appear at all in the target graph, and 'count' appears to be transformed.
+- The 'sex' variable does not appear at all in the target graph, and 'count' appears to be transformed.
 
 ##### What variable(s) in the graph are similar to corresponding variables in the raw data table, but might have been transformed in some way?
 
-The 'Popularity' appears to be the 'count' variable of both male and females combined
+- The 'Popularity' appears to be the 'count' variable of both male and females combined
 
 ___
 
@@ -68,15 +68,15 @@ ___
 
 ##### Have cases been filtered out?
 
-All cases have been filtered out except for the desired names.
+- All cases have been filtered out except for the desired names.
 
 ##### Have cases been grouped and summarized within groups in any way?
 
-Cases have been grouped by 'name' and 'year', removing the 'sex' variable.
+- Cases have been grouped by 'name' and 'year', removing the 'sex' variable.
 
 ##### Have any new variables been introduced?  If so, what the relationship between the new variables and existing variables?
 
-It appears the only new variable is 'Popularity', which simply appears to be the 'count' of both males and females.
+- It appears the only new variable is 'Popularity', which simply appears to be the 'count' of both males and females.
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 - Group the cases by 'name' and 'year'.
 - Filter out all the unwanted names.
-- Summarise the 'count' variable to a sex-combined 'total' variable.
+- Summarise the 'count' variable to a sex-combined 'total' variable, which will be displyed as 'Popularity'.
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 [This should be done by hand on paper, nothing to show in the HTML doc]
 
-
+___
 
 ### Step 7
 
@@ -102,7 +102,7 @@ group_by(name, year) %>%
 filter(name %in% c("Branson", "Emma", "Neil", "Susan")) %>%
 summarise(total = sum(count))
 ```
-
+___
 
 ### Graph It!
 
@@ -114,6 +114,7 @@ GlyphReadyForm %>%
   geom_line(size = 1, alpha = 0.5, aes(color = name)) + 
   ylab("Popularity") + xlab("Year")
 ```
+
 ```{r}
 ggplot(GRdata) +
     aes(x = year, y = total, colour = name) +
@@ -128,5 +129,6 @@ ggplot(GRdata) +
     theme_minimal()
 ```
 
+- The name 'Susan' really took off in popularity around the 1930s and 40s, and remained so until the 1970s. Emma was only a mildly popular name until the late 1900s. 'Neil' and 'Branson' are both not very popular names, but 'Branson' is certainly the least popular.
 
 Note: if someone in your group has a name that hasn't been registered with the US Social Security Administration for a baby born in the United States, it's okay that the student's name may not appear on the plot.
