@@ -82,7 +82,9 @@ ___
 
 ### Step 5
 
-
+- Group the cases by 'name' and 'year'.
+- Filter out all the unwanted names.
+- Summarise the 'count' variable to a sex-combined 'total' variable.
 
 ___
 
@@ -95,8 +97,10 @@ ___
 ### Step 7
 
 ```{r}
-
-
+GRdata <- BabyNames %>%
+group_by(name, year) %>%
+filter(name %in% c("Branson", "Emma", "Neil", "Susan")) %>%
+summarise(total = sum(count))
 ```
 
 
@@ -110,7 +114,19 @@ GlyphReadyForm %>%
   geom_line(size = 1, alpha = 0.5, aes(color = name)) + 
   ylab("Popularity") + xlab("Year")
 ```
-
+```{r}
+ggplot(GRdata) +
+    aes(x = year, y = total, colour = name) +
+    geom_step(linewidth = 1) +
+    scale_color_hue(direction = 1) +
+    labs(
+        x = "Year",
+        y = "Popularity",
+        title = "Popularity of Names",
+        color = "Names:"
+    ) +
+    theme_minimal()
+```
 
 
 Note: if someone in your group has a name that hasn't been registered with the US Social Security Administration for a baby born in the United States, it's okay that the student's name may not appear on the plot.
