@@ -62,27 +62,29 @@ The 'sex' variable does not appear at all in the target graph, and 'count' appea
 
 The 'Popularity' appears to be the 'count' variable of both male and females combined
 
-
+___
 
 ### Step 4
 
 ##### Have cases been filtered out?
 
-
+All cases have been filtered out except for the desired names.
 
 ##### Have cases been grouped and summarized within groups in any way?
 
-
+Cases have been grouped by 'name' and 'year', removing the 'sex' variable.
 
 ##### Have any new variables been introduced?  If so, what the relationship between the new variables and existing variables?
 
+It appears the only new variable is 'Popularity', which simply appears to be the 'count' of both males and females.
 
-
-
+___
 
 ### Step 5
 
 
+
+___
 
 ### Step 6
 
