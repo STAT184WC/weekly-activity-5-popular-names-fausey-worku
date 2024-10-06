@@ -42,7 +42,7 @@ BabyNames %>%
   head(5)
 nrow(BabyNames)
 ```
-The dataframe consists of 4 variables across 1.79 million cases.
+The data frame consists of 4 variables across 1.79 million cases. Each case represents a name, given the gender and year.
 
 ___
 
@@ -56,11 +56,11 @@ ___
 
 ##### What variable(s) from the raw data table do not appear at all in the graph?
 
-
+The 'sex' variable does not appear at all in the target graph, and 'count' appears to be transformed.
 
 ##### What variable(s) in the graph are similar to corresponding variables in the raw data table, but might have been transformed in some way?
 
-
+The 'Popularity' appears to be the 'count' variable of both male and females combined
 
 
 
